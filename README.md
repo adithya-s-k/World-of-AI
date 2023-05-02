@@ -1,6 +1,6 @@
 <div align="center">
   <h1>AI SIMPLIFIED 🤖:brain:</h1>
-  <h3>Website for AI Simplified Repo: <a href="https://tinyurl.com/ai-simplified">Click Here!🎯</a></h3>
+  <h3>Website for AI Simplified Repo: <a href="https://www.cognitivelab.tech/">Click Here!🎯</a></h3>
 </div>
 
 <div align="center">
