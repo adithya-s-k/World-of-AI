@@ -130,11 +130,7 @@ If you found this project helpful or you learned something from the source code 
 
 If you liked working on this project, do ⭐ and share this repository.
 
-## 📬 Contact
-
-If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** or **adithya.s.kolavi@gmail.com**.
-
-© 2023 CognitiveLab-io
+© 2023 CognitiveLab
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 
@@ -144,7 +140,8 @@ If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** o
 This project is licensed under the [MIT License](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/LICENSE)
 
 ## 📬 Connect with us
-If you have any questions about this project, feel free to reach out to us at **cognitivelab.tech@gmail.com**.
+If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** or **adithya.s.kolavi@gmail.com**.
+
 
 <div align="center">
   <h1>Happy Contributing! 🚀</h1>
