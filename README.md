@@ -1,28 +1,30 @@
 <div align="center">
-  <h1>AI SIMPLIFIED 🤖:brain:</h1>
-  <h3>Website for AI Simplified Repo: <a href="https://www.cognitivelab.tech/">Click Here!🎯</a></h3>
+  <h1>WORLD OF AI 🌏</h1>
+  <h3>Website for World of AI Repo: <a href="https://www.cognitivelab.tech/">Click Here!🎯</a></h3>
 </div>
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=blue)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=brightgreen)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=aqua)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=blue)
-![GitHub language count](https://img.shields.io/github/languages/count/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=brightgreen)
-![GitHub top language](https://img.shields.io/github/languages/top/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=aqua)
-![GitHub last commit](https://img.shields.io/github/last-commit/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=blue)
+![GitHub contributors](https://img.shields.io/github/contributors/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/CognitiveLab-io/World-of-AI?style=for-the-badge&color=brightgreen)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/CognitiveLab-io/World-of-AI?style=for-the-badge&color=brightgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
+![GitHub last commit](https://img.shields.io/github/last-commit/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
-![Github Repo Size](https://img.shields.io/github/repo-size/CognitiveLab-io/AI-Simplified?style=for-the-badge&color=aqua)
+![Github Repo Size](https://img.shields.io/github/repo-size/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
 
 </div>
 
-![](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/.github/Assets/ai-simplified.png)
+![](https://github.com/CognitiveLab-io/World-of-AI/blob/main/.github/Assets/World-of-AI.png)
 
-****************************************************
+---
+
 ## 🔴 Welcome contributors!
+
 Artificial Intelligence (AI) is rapidly transforming the world we live in. AI allows computer systems to perform tasks that usually require human intelligence, such as visual perception, speech recognition, decision-making, and language translation. AI is a complex field, but it is becoming increasingly accessible to developers of all skill levels. </br> </br>
-**AI Simplified is an open-source repository under CognitiveLab, containing beginner to expert level AI-based projects for the contributors, who are willing to start their journey in Artificial Intelligence and Deep Learning.**
+**World of AI is an open-source repository by CognitiveLab, containing beginner to expert level AI-based projects for the contributors, who are willing to start their journey in Artificial Intelligence and Deep Learning.**
 
 Sure, here's the updated project structure with the categories before the folder structures:
 
@@ -79,13 +81,13 @@ For each ML project, we have the following folder structure:
   - **Images** 📷 - This folder is used to store the images generated during the data analysis, data visualization, data segmentation of the project.
   - **Model** 🤖 - This folder contains your project file (i.e., `.ipynb` file) for analysis or prediction. Other than the project file, it should also have a `README.md` file using this template and a `requirements.txt` file which would be enclosed with all needed add-ons and libraries that are included in
 
-**'README.md'** using this [template](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/.github/readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
-Please follow the [Code of Conduct](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/CONTRIBUTING.md) while contributing in this project repository.
-
+**'README.md'** using this [template](https://github.com/CognitiveLab-io/World-of-AI/blob/main/.github/readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
+Please follow the [Code of Conduct](https://github.com/CognitiveLab-io/World-of-AI/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-io/World-of-AI/blob/main/CONTRIBUTING.md) while contributing in this project repository.
 
 ## 🧮 Workflow
-- Go through the project repository and the [README](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/README.md) to get an idea about this repository.
-- Check out the existing issues present there in the [Issues](https://github.com/CognitiveLab-io/AI-Simplified/issues) section.
+
+- Go through the project repository and the [README](https://github.com/CognitiveLab-io/World-of-AI/blob/main/README.md) to get an idea about this repository.
+- Check out the existing issues present there in the [Issues](https://github.com/CognitiveLab-io/World-of-AI/issues) section.
 - Comment out in the issue, you wanna work on.
 - Wait for the issue to be assigned to you. Once it's assigned to you, start working on it.
 - Fork the repository.
@@ -95,31 +97,33 @@ Please follow the [Code of Conduct](https://github.com/CognitiveLab-io/AI-Simpli
 - Then in Github, in your cloned repository find the option to make a pull request.
 
 ## 🤔 New to Open Source programs/events!
+
 Here are few articles which will help you to get an idea on how you start contributing in open source projects,
 You can refer to the following articles on the basics of Git and Github.
+
 - [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
-
 ## Project Admin 👨‍💼
+
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/adithya-s-k"><img src="https://avatars.githubusercontent.com/u/27956426?s=400&u=582ecb2d706a63fc67eb1b54579c7ab19cf391fd&v=4" width="100px;" alt=""/><br /><sub><b>Adithya S Kolavi</b></sub></a><br /><a href="https://github.com/CognitiveLab-io/AI-Simplified/commits?author=adithya-s-k" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/adithya-s-k"><img src="https://avatars.githubusercontent.com/u/27956426?s=400&u=582ecb2d706a63fc67eb1b54579c7ab19cf391fd&v=4" width="100px;" alt=""/><br /><sub><b>Adithya S Kolavi</b></sub></a><br /><a href="https://github.com/CognitiveLab-io/World-of-AI/commits?author=adithya-s-k" title="Code">💻</a></td>
     </tr>
   </table>
 </div>
 
 ## Contributors 🌟
+
 Thanks to these wonderful people for their contributions!
 
-<a href="https://github.com/CognitiveLab-io/AI-Simplified/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CognitiveLab-io/AI-Simplified" />
+<a href="https://github.com/CognitiveLab-io/World-of-AI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CognitiveLab-io/World-of-AI" />
 </a>
-
 
 ## ⭐ Give this Project a Star
 
@@ -134,14 +138,13 @@ If you liked working on this project, do ⭐ and share this repository.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 
-
-
 ## License 📝
-This project is licensed under the [MIT License](https://github.com/CognitiveLab-io/AI-Simplified/blob/main/LICENSE)
+
+This project is licensed under the [MIT License](https://github.com/CognitiveLab-io/World-of-AI/blob/main/LICENSE)
 
 ## 📬 Connect with us
-If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** or **adithya.s.kolavi@gmail.com**.
 
+If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** or **adithya.s.kolavi@gmail.com**.
 
 <div align="center">
   <h1>Happy Contributing! 🚀</h1>
