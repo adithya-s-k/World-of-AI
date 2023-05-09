@@ -5,19 +5,19 @@
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/CognitiveLab-io/World-of-AI?style=for-the-badge&color=brightgreen)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
-![GitHub language count](https://img.shields.io/github/languages/count/CognitiveLab-io/World-of-AI?style=for-the-badge&color=brightgreen)
-![GitHub top language](https://img.shields.io/github/languages/top/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
-![GitHub last commit](https://img.shields.io/github/last-commit/CognitiveLab-io/World-of-AI?style=for-the-badge&color=blue)
+![GitHub contributors](https://img.shields.io/github/contributors/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=blue)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=brightgreen)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=aqua)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=blue)
+![GitHub language count](https://img.shields.io/github/languages/count/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=brightgreen)
+![GitHub top language](https://img.shields.io/github/languages/top/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=aqua)
+![GitHub last commit](https://img.shields.io/github/last-commit/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=blue)
 ![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=for-the-badge)
-![Github Repo Size](https://img.shields.io/github/repo-size/CognitiveLab-io/World-of-AI?style=for-the-badge&color=aqua)
+![Github Repo Size](https://img.shields.io/github/repo-size/CognitiveLab-tech/World-of-AI?style=for-the-badge&color=aqua)
 
 </div>
 
-![](https://github.com/CognitiveLab-io/World-of-AI/blob/main/.github/Assets/World-of-AI.png)
+![](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/Assets/World-of-AI.png)
 
 ---
 
@@ -81,13 +81,13 @@ For each ML project, we have the following folder structure:
   - **Images** 📷 - This folder is used to store the images generated during the data analysis, data visualization, data segmentation of the project.
   - **Model** 🤖 - This folder contains your project file (i.e., `.ipynb` file) for analysis or prediction. Other than the project file, it should also have a `README.md` file using this template and a `requirements.txt` file which would be enclosed with all needed add-ons and libraries that are included in
 
-**'README.md'** using this [template](https://github.com/CognitiveLab-io/World-of-AI/blob/main/.github/readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
-Please follow the [Code of Conduct](https://github.com/CognitiveLab-io/World-of-AI/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-io/World-of-AI/blob/main/CONTRIBUTING.md) while contributing in this project repository.
+**'README.md'** using this [template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
+Please follow the [Code of Conduct](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CONTRIBUTING.md) while contributing in this project repository.
 
 ## 🧮 Workflow
 
-- Go through the project repository and the [README](https://github.com/CognitiveLab-io/World-of-AI/blob/main/README.md) to get an idea about this repository.
-- Check out the existing issues present there in the [Issues](https://github.com/CognitiveLab-io/World-of-AI/issues) section.
+- Go through the project repository and the [README](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/README.md) to get an idea about this repository.
+- Check out the existing issues present there in the [Issues](https://github.com/CognitiveLab-tech/World-of-AI/issues) section.
 - Comment out in the issue, you wanna work on.
 - Wait for the issue to be assigned to you. Once it's assigned to you, start working on it.
 - Fork the repository.
@@ -112,35 +112,36 @@ You can refer to the following articles on the basics of Git and Github.
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://github.com/adithya-s-k"><img src="https://avatars.githubusercontent.com/u/27956426?s=400&u=582ecb2d706a63fc67eb1b54579c7ab19cf391fd&v=4" width="100px;" alt=""/><br /><sub><b>Adithya S Kolavi</b></sub></a><br /><a href="https://github.com/CognitiveLab-io/World-of-AI/commits?author=adithya-s-k" title="Code">💻</a></td>
+      <td align="center"><a href="https://github.com/adithya-s-k"><img src="https://avatars.githubusercontent.com/u/27956426?s=400&u=582ecb2d706a63fc67eb1b54579c7ab19cf391fd&v=4" width="100px;" alt=""/><br /><sub><b>Adithya S Kolavi</b></sub></a><br /><a href="https://github.com/CognitiveLab-tech/World-of-AI/commits?author=adithya-s-k" title="Code">💻</a></td>
     </tr>
   </table>
 </div>
 
 ## Contributors 🌟
 
+CognitiveLab-tech
 Thanks to these wonderful people for their contributions!
 
-<a href="https://github.com/CognitiveLab-io/World-of-AI/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=CognitiveLab-io/World-of-AI" />
+<a href="https://github.com/CognitiveLab-tech/World-of-AI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CognitiveLab-tech/World-of-AI" />
 </a>
 
 ## ⭐ Give this Project a Star
 
 If you found this project helpful or you learned something from the source code and want to thank the developers, consider giving the repo a star. It means a lot to us! :star:
 
-[![GitHub followers](https://img.shields.io/github/followers/CognitiveLab-io.svg?label=Follow%20CognitiveLab-io&style=social)](https://github.com/CognitiveLab-io/)
+[![GitHub followers](https://img.shields.io/github/followers/CognitiveLab-tech.svg?label=Follow%20CognitiveLab&style=social)](https://github.com/CognitiveLab-tech/)
 [![GitHub followers](https://img.shields.io/github/followers/adithya-s-k.svg?label=Follow%20adithya-s-k&style=social)](https://github.com/adithya-s-k/)
 
 If you liked working on this project, do ⭐ and share this repository.
 
 © 2023 CognitiveLab
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://cognitivelab.tech) [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://cognitivelab.tech) [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://cognitivelab.tech)
 
 ## License 📝
 
-This project is licensed under the [MIT License](https://github.com/CognitiveLab-io/World-of-AI/blob/main/LICENSE)
+This project is licensed under the [MIT License](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/LICENSE)
 
 ## 📬 Connect with us
 
