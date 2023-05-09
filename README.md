@@ -17,7 +17,7 @@
 
 </div>
 
-![](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/Assets/World-of-AI.png)
+![World of Ai](https://github.com/CognitiveLab-tech/World-of-AI/assets/27956426/c62cc027-e57c-422a-842f-7d58faf20078)
 
 ---
 
