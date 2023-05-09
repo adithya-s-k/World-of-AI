@@ -22,9 +22,13 @@
 
 <!-- Have you talked to any of the Moderators or Project Admin (Adithya S K or CognitiveLab) before creating this issue? If not, just have a quick discussion and then once approved, create this feature request. -->
 
-# [Project Name]
+# Project Name
+
+<!-- Replace with the project name -->
 
 ## Description
+
+<!-- add description to the project -->
 
 [Description of the project, its goals, and expected outcomes]
 
