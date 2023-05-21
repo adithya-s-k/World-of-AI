@@ -145,5 +145,3 @@ if email_input:
     display_formatted_email(formatted_email)
 
 st.markdown("---")
-st.markdown("Built by [Adithya S K](https://github.com/adithya-s-k) for Applying to **Coach Bots**", unsafe_allow_html=True)
-st.markdown("Contact me at [LinkedIn](https://www.linkedin.com/in/adithya-s-kolavi/) or adithyaskolavi@gmail.com")
