@@ -48,6 +48,7 @@ For each AI project, we have the following folder structure:
 
 - **Project Name** 📁 - This folder is named after your project and must be in `kebab-case`. It should contain all the project assets.
   - **Streamlit** 🚀 - This folder is used to store the Streamlit app that uses the trained model. The `README.md` in this folder should have the instructions to run the Streamlit app.
+  - **Readme** - [Follow the following template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/project_readme_template.md)
 
 #### DL 🤖
 
@@ -64,6 +65,7 @@ For each DL project, we have the following folder structure:
   - **Images** 📷 - This folder is used to store the images generated during the data analysis, data visualization, data segmentation of the project.
   - **Model** 🤖 - This folder contains your project file (i.e., `.ipynb` file) for analysis or prediction. Other than the project file, it should also have a `README.md` file using this template and a `requirements.txt` file which would be enclosed with all needed add-ons and libraries that are included in the project.
   - **Streamlit** 🚀 - This folder is used to store the Streamlit app that uses the trained model. The `README.md` in this folder should have the instructions to run the Streamlit app.
+  - **Readme** - [Follow the following template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/project_readme_template.md)
 
 #### ML 📈
 
@@ -80,9 +82,9 @@ For each ML project, we have the following folder structure:
   - **Dataset** 📁 - This folder stores the dataset used in this project. If the dataset is too large to upload, create a `README.md` file inside the `Dataset` folder and provide a link to the dataset.
   - **Images** 📷 - This folder is used to store the images generated during the data analysis, data visualization, data segmentation of the project.
   - **Model** 🤖 - This folder contains your project file (i.e., `.ipynb` file) for analysis or prediction. Other than the project file, it should also have a `README.md` file using this template and a `requirements.txt` file which would be enclosed with all needed add-ons and libraries that are included in
-
-**'README.md'** using this [template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
-Please follow the [Code of Conduct](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CONTRIBUTING.md) while contributing in this project repository.
+  - **Readme** - [Follow the following template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/project_readme_template.md)
+    **'README.md'** using this [template](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/.github/project_readme_template.md) and **'requirements.txt'** file which would be enclosed with all needed add-ons and libraries that are included in the project.</br></br>
+    Please follow the [Code of Conduct](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CODE_OF_CONDUCT.md) and [Contributing Guidelines](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CONTRIBUTING.md) while contributing in this project repository.
 
 ## 🧮 Workflow
 
@@ -107,6 +109,16 @@ You can refer to the following articles on the basics of Git and Github.
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
+## ❄️Open Source Programs!
+
+<table>
+<tr>
+ <td align="center">
+<a href="https://gssoc.girlscript.tech/"><img src="https://raw.githubusercontent.com/prathimacode-hub/prathimacode-hub/main/Open%20Source%20Programs/GirlScript%20Summer%20Of%20Code%202022/GirlScript%20Summer%20Of%20Code%20Logo.png" width=100px height=100px /><br /><sub><b>Girl Script Summer of Code</b></sub></a>
+ </td>
+</tr>
+</table>
+
 ## Project Admin 👨‍💼
 
 <div align="center">
@@ -117,9 +129,18 @@ You can refer to the following articles on the basics of Git and Github.
   </table>
 </div>
 
+## Project Mentors 👨‍💼
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><a href="https://github.com/miraj0507"><img src="https://avatars.githubusercontent.com/u/62544210?v=4" width="100px;" alt=""/><br /><sub><b>SK MIRAJ</b></sub></a><br /><a href="https://github.com/miraj0507 title="Code">💻</a></td>
+    </tr>
+  </table>
+</div>
+
 ## Contributors 🌟
 
-CognitiveLab-tech
 Thanks to these wonderful people for their contributions!
 
 <a href="https://github.com/CognitiveLab-tech/World-of-AI/graphs/contributors">
@@ -150,3 +171,8 @@ If you want to contact us, you can reach us at **cognitivelab.tech@gmail.com** o
 <div align="center">
   <h1>Happy Contributing! 🚀</h1>
 </div>
+<br>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
+
+<hr>
