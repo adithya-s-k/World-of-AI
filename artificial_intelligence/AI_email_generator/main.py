@@ -29,18 +29,38 @@ template = """
 
 prompt = PromptTemplate(
   template=template,
-  input_variables= ["tone" , "dialect" , "email"],
+  input_variables=["tone", "dialect", "email"],
 )
 
 def load_LLM(openai_api_key):
     """Logic for loading the chain you want to use should go here."""
     # Make sure your openai_api_key is set as an environment variable
-    llm = OpenAI(client= "Any" ,openai_api_key = openai_api_key)
+    llm = OpenAI(client="Any", openai_api_key=openai_api_key)
     return llm
 
+def validate_openai_api_key(api_key):
+    """Validate the OpenAI API key format."""
+    # Add your validation logic here
+    if len(api_key) == 0:
+        return False
+    return True
 
+def validate_email_input(email):
+    """Validate the email input."""
+    # Add your validation logic here
+    if len(email.split(" ")) > 700:
+        return False
+    return True
+
+def update_text_with_example():
+    """Update the email input with an example."""
+    st.session_state.email_input = "Sally I am starts work at yours Monday from Dave"
+
+# Set up Streamlit page configuration
 st.set_page_config(page_title="Email Generator", page_icon="email", layout="wide")
-st.header("AI powered Email Generator")
+
+# Header
+st.header("AI-powered Email Generator")
 
 # About Section
 st.write('Our AI email generator app is designed to help you save time and streamline your email communication. With our app, you can easily generate professional and effective emails in a matter of seconds, without having to spend hours crafting the perfect message. Our advanced algorithms analyze your input and generate highly personalized emails that are tailored to your specific needs. Our app is perfect for busy professionals who want to stay on top of their email correspondence and make a great impression on their clients and colleagues.')
@@ -53,8 +73,6 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write('**Personalized Emails**')
     st.write('Our app uses advanced algorithms to analyze your input and generate highly personalized emails that are tailored to your specific needs.')
-    
-    
 
 with col2:
     st.write('**Time-Saving**')
@@ -75,27 +93,25 @@ with col2:
 with col3:
     st.write('**Insights and Analytics**')
     st.write('Our app provides you with insights and analytics about your email performance, including open rates, click-through rates, and more, so you can optimize your communication strategy over time.')
-    
 
 st.markdown("---")
 st.header("Try it out!")
 
-def get_api_key():
-    input_text = st.text_input(label="Enter your OpenAI API Key", type="password" , placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" , help="You can get your API key from https://beta.openai.com/account/api-keys please refer to https://www.windowscentral.com/software-apps/how-to-get-an-openai-api-key on where to find your api key" , key="openai_api_key") 
-    return input_text
+# Get the OpenAI API key
+openai_api_key = st.text_input(label="Enter your OpenAI API Key", type="password", placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", key="openai_api_key")
 
-openai_api_key = get_api_key()
+# Validate the OpenAI API key
+if not validate_openai_api_key(openai_api_key):
+    st.warning('Please enter a valid OpenAI API key.')
+    st.stop()
 
 col1, col2 = st.columns(2)
+
 with col1:
-    option_tone = st.selectbox(
-        'Which tone would you like your email to have?',
-        ('Formal', 'Informal'))
-    
+    option_tone = st.selectbox('Which tone would you like your email to have?', ('Formal', 'Informal'))
+
 with col2:
-    option_dialect = st.selectbox(
-        'Which English Dialect would you like?',
-        ('American', 'British'))
+    option_dialect = st.selectbox('Which English Dialect would you like?', ('American', 'British'))
 
 def get_text():
     input_text = st.text_area(label="Email Input", label_visibility='collapsed', placeholder="Your Email...", key="email_input")
@@ -103,29 +119,29 @@ def get_text():
 
 email_input = get_text()
 
-if len(email_input.split(" ")) > 700:
+# Validate the email input
+if not validate_email_input(email_input):
     st.write("Please enter a shorter email. The maximum length is 700 words.")
     st.stop()
 
-def update_text_with_example():
-    print ("in updated")
-    st.session_state.email_input = "Sally I am starts work at yours monday from dave"
+def generate_formatted_email(email_input, option_tone, option_dialect, openai_api_key):
+    """Generate the formatted email using OpenAI API."""
+    llm = load_LLM(openai_api_key=openai_api_key)
+    prompt_final = prompt.format(tone=option_tone, dialect=option_dialect, email=email_input)
+    formatted_email = llm(prompt_final)
+    return formatted_email
 
+def display_formatted_email(formatted_email):
+    """Display the formatted email."""
+    st.markdown(formatted_email)
+
+# See an example button
 st.button("*See An Example*", type='secondary', help="Click to see an example of the email you will be converting.", on_click=update_text_with_example)
 
 st.markdown("### Your Converted Email:")
 
 if email_input:
-    if not openai_api_key:
-        st.warning('Please insert OpenAI API Key. Instructions [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key)', icon="⚠️")
-        st.stop()
-        
-    llm = load_LLM(openai_api_key = openai_api_key)
-    prompt_final  = prompt.format(tone=option_tone, dialect=option_dialect, email=email_input)
-    formatted_email = llm(prompt_final)
-        
-    st.markdown(formatted_email)
+    formatted_email = generate_formatted_email(email_input, option_tone, option_dialect, openai_api_key)
+    display_formatted_email(formatted_email)
 
 st.markdown("---")
-st.markdown("Built by [Adithya S K](https://github.com/adithya-s-k) for Applying to **Coach Bots**",unsafe_allow_html=True)
-st.markdown("contact me at [LinkedIn](https://www.linkedin.com/in/adithya-s-kolavi/) or adithyaskolavi@gmail.com")
