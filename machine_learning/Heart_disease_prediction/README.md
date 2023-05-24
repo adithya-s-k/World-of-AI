@@ -48,11 +48,8 @@ Libraries required:
 ## VISUALIZATION
 
 INCLUSION OF IMAGES OF THE VISUALIZATION (RESULT OF EDA)
-image.png
-image.png
-image.png
-image.png
-image.png
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output.png)
+
 
 
 ## ACCURACIES
@@ -69,3 +66,4 @@ The accuracy score achieved using Neural Network is: 80.33 %
 ## CONCLUSION
 The most accurate model found to be Random Forest to predict early heart disease.
 
+email- poorvikagupta2001@gmail.com
