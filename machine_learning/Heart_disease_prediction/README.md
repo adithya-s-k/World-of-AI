@@ -47,7 +47,14 @@ Libraries required:
 
 ## VISUALIZATION
 
-All images of the visualisation (RESULT OF EDA) are enclosed in images folder.
+INCLUSION OF IMAGES OF THE VISUALIZATION (RESULT OF EDA)
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output.png)
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output2.png)
+- ![Screenshot](//home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output3.png)
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output4.png)
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output6.png)
+- ![Screenshot](/home/skyfly/GSSOc/World-of-AI-1/machine_learning/Heart_disease_prediction/images/output7.png)
+
 
 ## ACCURACIES
 
