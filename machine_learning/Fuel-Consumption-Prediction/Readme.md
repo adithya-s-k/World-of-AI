@@ -7,7 +7,7 @@ The main purpose of this Project is to predict the fuel consumption of a car bas
 ## DATASET
 
 This dataset has been taken from Kaggle.<br>
-Link - [https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset](https://www.kaggle.com/datasets/praneeshsharma/vehicle-fuelconsumption)
+[Link to dataset](https://www.kaggle.com/datasets/praneeshsharma/vehicle-fuelconsumption)
 
 
 ## DESCRIPTION
