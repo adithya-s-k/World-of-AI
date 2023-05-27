@@ -1,7 +1,7 @@
 import cv2
 import pandas as pd
 
-img_path = r'D:\Documents\World-of-AI\Color_Detection_Model\test.png'
+img_path = r'deep_learning\Color_Detection_Model\test.png'
 img = cv2.imread(img_path)
 
 # declaring global variables (are used later on)
@@ -10,7 +10,7 @@ r = g = b = x_pos = y_pos = 0
 
 # Reading csv file with pandas and giving names to each column
 index = ["color", "color_name", "hex", "R", "G", "B"]
-csv = pd.read_csv('Color_Detection_Model\colors.csv', names=index, header=None)
+csv = pd.read_csv('D:\Documents\World-of-AI\deep_learning\Color_Detection_Model\colors.csv', names=index, header=None)
 
 
 # function to calculate minimum distance from all colors and get the most matching color
