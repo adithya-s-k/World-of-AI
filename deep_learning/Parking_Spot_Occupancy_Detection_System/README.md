@@ -55,11 +55,8 @@ Libraries required:
 
 ## ACCURACY
 
-The AlexNet model was found accurate in terms of validation data. The model produced an validation accuracy of 96.25% and loss of 15.55% as depicted in Table I. Thus, the AlexNet model can accurately detect the empty parking slots.
+The AlexNet model was found accurate in terms of validation data. The model produced an validation accuracy of 96.25% and loss of 15.55% as depicted. Thus, the AlexNet model can accurately detect the empty parking slots.
 
 ![image](https://github.com/PrathmeshN99/World-of-AI/assets/90515944/06523351-fc10-4bc5-b491-4a6b986e8aa8)
 ![image](https://github.com/PrathmeshN99/World-of-AI/assets/90515944/e8f16ea0-89d3-41ac-bb4e-5250a5e1dc38)
 
-
-
-email- poorvikagupta2001@gmail.com
