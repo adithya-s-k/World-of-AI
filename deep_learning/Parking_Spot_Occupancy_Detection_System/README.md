@@ -1,4 +1,4 @@
-### Parking Spot Occupany Detection System
+### Parking Spot Occupancy Detection System
 
 ## GOAL
 
@@ -9,7 +9,7 @@ To develop an automated system to detect the empty parking spaces in a parking l
 The dataset has been obtained from the following websites:
 http://cnrpark.it/
 https://public.roboflow.com/object-detection/pklot
-You can also refer to other dataset inluding the required attributes.
+You can also refer to other dataset including the required attributes.
 
 ## DESCRIPTION
 
