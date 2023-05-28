@@ -14,7 +14,7 @@ This is a Flask web application that allows users to upload PDF documents, extra
 2. Navigate to the project directory:
 
    ```shell
-   cd pdf-summarization
+   cd deep_learning/Text Summarizer and Categorizer from PDF Documents
    ```
 
 3. Create a virtual environment:
