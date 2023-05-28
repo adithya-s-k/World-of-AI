@@ -1,5 +1,3 @@
-Certainly! Here's an example README.md file for your Flask application:
-
 ```markdown
 # PDF Summarization and Text Categorization App
 
