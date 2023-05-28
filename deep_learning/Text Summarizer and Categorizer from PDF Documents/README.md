@@ -1,4 +1,4 @@
-```markdown
+
 # PDF Summarization and Text Categorization App
 
 This is a Flask web application that allows users to upload PDF documents, extract the text content from them, summarize the text, and perform text categorization on the document. The application makes use of the Hugging Face Transformers library for summarization and text classification.
