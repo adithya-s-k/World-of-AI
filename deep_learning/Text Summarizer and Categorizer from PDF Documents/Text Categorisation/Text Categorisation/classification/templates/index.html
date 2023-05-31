@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research Paper Abstract Clustering</title>
+  </head>
+  <body>
+    <h1>Research Paper Abstract Clustering</h1>
+
+    <form method="POST" action="{{ url_for('update') }}">
+      <textarea name="text" rows="5" cols="50"></textarea><br><br>
+      <input type="submit" value="Cluster">
+    </form>
+
+    {{ data|safe }}
+  </body>
+</html>

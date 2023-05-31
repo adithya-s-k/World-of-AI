@@ -1,0 +1,218 @@
+/* radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) */
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap");
+body,html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* background-image: radial-gradient(circle, rgba(255,238,147,1) 0%, rgba(255,192,159,1) 50%, rgba(171,196,255,1) 100%); */
+    background: linear-gradient(-45deg, rgba(255,238,147,1), rgba(255,192,159,1), rgba(171,196,255,1));
+    animation: gradient 2s ease-in-out infinite;
+    background-size: 200% 200%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: black;
+    font-family:'Sono', sans-serif;
+}
+
+.line{
+    position: relative;
+    top: 50%;
+    /postion of cursor/
+    width: 5em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(23, 2, 2, 0.75);
+    font-size: 500%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* .anim-typewriter{
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+} */
+
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.table_input {
+    position: relative;
+    margin-top: 60vh;
+}
+
+.anim-typewriter {
+    animation: typewriter 5s steps(40) 1s infinite both,
+    blinkTextCursor 400ms steps(40) infinite normal;
+  }
+
+@keyframes typewriter{
+    from{
+        width:0;
+    }
+    to{
+        width: 1600px;
+    }
+}
+
+@keyframes blinkTextCursor{
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.home-btn {
+    /* transform: translate(0px, 400px); */
+    margin-top: 400px;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: linear-gradient(-45deg, rgba(255,238,147,1), rgba(255,192,159,1), rgba(171,196,255,1));
+    transition: 0.5s;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family:'Sono', sans-serif;
+    animation: gradient 2s ease-in-out infinite;
+    background-size: 200% 200%;
+}
+.home-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 100px rgba(0,0,0,0.3);
+
+}
+
+.table_input input[type="file"], .table_input textarea {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+.table_input input[type=submit] {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    background: linear-gradient(-45deg, rgba(255,238,147,1), rgba(255,192,159,1), rgba(171,196,255,1));
+    transition: 0.5s;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family:'Sono', sans-serif;
+    animation: gradient 2s ease-in-out infinite;
+    background-size: 200% 200%;
+}
+.table_input table {
+    border-collapse :collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    table-layout: fixed;
+}
+.table_input {
+    overflow-x: auto;
+}
+.para{
+   margin:auto;
+}
+.table_input th, .table_input td {
+    text-align:left;
+    padding :8px;
+    white-space: normal;
+
+}
+
+.table_input th {
+   background-color:rgba(171,196,255,1);
+
+}
+
+/*------------------------------*/
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+input[type=file] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+input[type=file]::file-selector-button {
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}

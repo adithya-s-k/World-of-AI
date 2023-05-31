@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Categorisation</title>
+    <link rel="stylesheet"  href="../static/styles/style1.css" />
+</head>
+<body>
+<div class = "para">
+    <p class ='line anim-typewriter'>DOCUMENT CONTENT CATEGORIZATION</p>
+</div>
+<div class = "table_input">
+        <h1>UPLOAD CSV FILE:</h1>
+        <form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+            <label for="images" class="drop-container">
+                  <span class="drop-title">Drop files here</span>
+                  or
+                  <input type="file" name = "file">
+            </label>
+            <input type="submit" value="Upload">
+        </form>
+        <br>
+        <h1>ENTER ABSTRACT TEXT:</h1>
+        <form method="post" action="{{ url_for('cluster') }}">
+            <textarea name="text" rows="5" cols="80"></textarea><br>
+            <input type="submit" value="Cluster">
+        </form>
+        <h1>{{ heading_1 }}</h1>
+            {{ data|safe }}
+</div>
+</div>
+
+
+
+
+</body>
+</html>

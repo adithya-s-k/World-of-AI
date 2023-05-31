@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Dataset</title>
+</head>
+
+<body>
+    <h1>Update Dataset</h1>
+    <form action="{{ url_for('update') }}" method="POST">
+        <label for="abstract">Enter an abstract:</label><br>
+        <textarea id="abstract" name="abstract" rows="5" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
