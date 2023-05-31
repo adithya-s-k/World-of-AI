@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abstract Clustering</title>
+</head>
+<body>
+	<h1>Abstract Clustering</h1>
+	<h2>Upload CSV file:</h2>
+	<form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+		<input type="file" name="file">
+		<input type="submit" value="Upload">
+	</form>
+	<br>
+	<h2>Enter abstract text:</h2>
+	<form method="post" action="{{ url_for('cluster') }}">
+		<textarea name="text" rows="5" cols="80"></textarea><br>
+		<input type="submit" value="Cluster">
+	</form>
+</body>
+</html>
