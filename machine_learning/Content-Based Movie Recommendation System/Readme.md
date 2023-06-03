@@ -2,7 +2,7 @@
 
 ## GOAL
 
-The main purpose of this Project is to recommend a Movie
+The main purpose of this Project is to recommend a Movie by using Machine Learning Model and deploying of Model In website
 ## DATASET
 
 Data has been used from Kaggle.
@@ -12,8 +12,7 @@ Reference to more data set - https://www.kaggle.com/datasets/tmdb/tmdb-movie-met
 ## DESCRIPTION
 
 The project will tell how you can  a movie by using Content based Filtering.So,A Movie can be recommend in many  ways of filtering but Content-Based Filtering 
-is simple and  easy to understand type of Movie recommendation,which use genre or keywords like title,year,Cast,director,etc and make a Machine learning model by the similarities of these.
-## WHAT I HAD DONE
+is simple and  easy to understand type of Movie recommendation,which use genre or keywords like title,year,Cast,director,etc and make a Machine learning model by the similarities of these.Also we will deploy the model in webiste by using Streamlit
 
 ## Steps to do:-
  
