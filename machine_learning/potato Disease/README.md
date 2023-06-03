@@ -24,11 +24,11 @@ In this project i have used CNN model. Because it is very efficient in image cla
 
 ## LIBRARIES NEEDED
 
-<br>Tensorflow</br>
-<br>opencv</br>
-<br><br>pandas</br>
-<br>matplotlib.pyplot</br>
-<br>numpy</br>
+<br>Tensorflow
+<br>opencv
+<br>pandas
+<br>matplotlib.pyplot
+<br>numpy
 
 ## VISUALIZATION
 
