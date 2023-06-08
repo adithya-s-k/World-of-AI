@@ -7,7 +7,7 @@ import numpy as np
 import model
 gen = model.Generator()
 
-checkpoint = torch.load("Model/Pretrainedgen.pth" , map_location='cpu')
+checkpoint = torch.load("World-of-AI\deep_learning\ESRGAN\Model\Pretrainedgen.pth" , map_location='cpu')
 gen.load_state_dict(checkpoint["state_dict"])
 st.title("Enhanced Image Resolution 😊")
 image = st.file_uploader(" " , ['jpg' , 'png' , 'gif'])
