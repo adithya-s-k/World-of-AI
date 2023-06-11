@@ -39,28 +39,42 @@ language to understand the captions
 WHAT I HAD DONE
 The step by step procedure of how project works:
 
-Feature Extraction 
-Preprocessing of Captions
-LSTM for sequence generation
-Model Building
-Generating Caption using Greedy search
+
+1.Feature Extraction 
+
+2.Preprocessing of Captions
+
+3.LSTM for sequence generation
+
+4.Model Building
+
+5.Generating Caption using Greedy search
 MODELS USED
 Algorithm used:
 
-CNN
-RNN
-LSTM
+1.CNN
+
+2.RNN
+
+3.LSTM
 
 LIBRARIES NEEDED
 Libraries required:
 
-opencv
-pillow
-keras
-fpdf
-py_edamam
-joblif
-anaconda
+
+1.opencv
+
+2.pillow
+
+3.keras
+
+4.fpdf
+
+5.py_edamam
+
+6.joblif
+
+7.anaconda
 
 
 ACCURACIES
