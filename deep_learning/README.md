@@ -1,6 +1,6 @@
 # Deep Learning Projects
-# Deep Learning Projects
-Video Caption Generator 
+# Video Caption Generator 
+
 GOAL
 The main purpose of this Project is to help the people with Deaf and hard of hearing individuals to watch videos helps people to focus on and remember the information more easily, to build the feature extraction using the convolutional neural network (VGG 16), to examine how LSTM is used for encoding and decoding the features and to explore how the greedy search algorithm predict the efficient caption.
 
