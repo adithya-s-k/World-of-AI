@@ -1,11 +1,12 @@
 
 # Video Caption Generator 
 
-GOAL
+## GOAL
+
 The main purpose of this Project is to help the people with Deaf and hard of hearing individuals to watch videos helps people to focus on and remember the information more easily, to build the feature extraction using the convolutional neural network (VGG 16), to examine how LSTM is used for encoding and decoding the features and to explore how the greedy search algorithm predict the efficient caption.
 
 
-DATASET
+## DATASET
 The Microsoft Research Video Description Corpus (MSVD) dataset consists of about 1970 
 short video snippets downloaded from YouTube. Each video snippet is annotated with 
 around 40 textual description collected via crowdsourcing. This results in 80839 sentences. 
@@ -16,7 +17,7 @@ testing_data. Each folder has a video subfolder that contains the videos that wi
 for both training and testing. There is also a feat subfolder in these folders, which stands 
 for features. The video’s features are contained in the feat folders.
 
-DESCRIPTION
+## DESCRIPTION
 Video understanding has become increasingly important as surveillance, social, and 
 informational videos weave themselves into everyday lives. Video captioning offers a 
 simple way to summarize, index, and search the data. In recent years, automatically 
@@ -36,9 +37,8 @@ features. Greedy search algorithm is used for predicting the efficient caption a
 speedy word extraction. Finally, the language converter is used for specific people 
 language to understand the captions
 
-WHAT I HAD DONE
-The step by step procedure of how project works:
-
+# WHAT I HAD DONE
+## The step by step procedure of how project works:
 
 1.Feature Extraction 
 
@@ -49,8 +49,9 @@ The step by step procedure of how project works:
 4.Model Building
 
 5.Generating Caption using Greedy search
-MODELS USED
-Algorithm used:
+
+# MODELS USED
+## Algorithm used:
 
 1.CNN
 
@@ -58,9 +59,8 @@ Algorithm used:
 
 3.LSTM
 
-LIBRARIES NEEDED
-Libraries required:
-
+# LIBRARIES NEEDED
+## Libraries required:
 
 1.opencv
 
@@ -77,10 +77,10 @@ Libraries required:
 7.anaconda
 
 
-ACCURACIES
+## ACCURACIES
 Accuracies and results of Algorithms used The accuracy score achieved is 0.87 and the loss score less than 1.
 
-CONCLUSION
+## CONCLUSION
 The most accurate model found to be CNN-RNN  for video caption generation.
 
 email- nehavish006@gmail.com
