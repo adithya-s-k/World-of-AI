@@ -14,7 +14,7 @@ Reference to more data set - https://www.kaggle.com/datasets/mathchi/diabetes-da
 
 The project involved analysis of the heart disease patient dataset with proper data processing. Then, different models will be trained and predictions will be made with different algorithms KNN, Decision Tree, Random Forest,SVM,Logistic Regression etc. Variety of Machine Learning algorithms implemented in Python to predict the presence of heart disease in a patient. This is a classification problem, with input features as a variety of parameters, and the target variable as a binary variable, predicting whether heart disease is present or not.
 
-## WHAT I HAD DONE
+## WHAT I HAVE DONE
 
 The step by step procedure of how project works:
 1. Data Cleaning
@@ -41,9 +41,8 @@ Libraries required:
 * Pandas
 * Numpy
 * Matplotlib
-* Seaborn
 * Sklearn
-
+* xgboost
 
 ## VISUALIZATION
 
@@ -54,7 +53,11 @@ INCLUSION OF IMAGES OF THE VISUALIZATION(RESULT OF EDA) in the image folder.
 
 Accuracies and results of Algorithms used
 The accuracy score achieved using Logistic Regression is 67%
-
+The accuracy score achieved using Decision Tree Classifier is 97%
+The accuracy score achieved using Random Forest is 95%
+The accuracy score achieved using SVM is 77%
+The accuracy score achieved using KNN is 74%
+The accuracy score achieved using XGBoost is 76%
 
 ## CONCLUSION
 The most accurate model found to be Random Forest to predict early heart disease.
