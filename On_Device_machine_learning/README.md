@@ -40,7 +40,7 @@ To use any of the included applications, follow the instructions provided within
 
 ## Contributing
 
-We welcome contributions to this repository! If you would like to contribute an application or improve existing ones, please follow the guidelines outlined in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+We welcome contributions to this repository! If you would like to contribute an application or improve existing ones, please follow the guidelines outlined in the [CONTRIBUTING.md](https://github.com/CognitiveLab-tech/World-of-AI/blob/main/CONTRIBUTING.md) file.
 
 ---
 
