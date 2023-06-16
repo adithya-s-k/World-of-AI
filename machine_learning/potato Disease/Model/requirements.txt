@@ -1,4 +1,0 @@
-pip install tensorflow
-pip install matplotlib.pyplot
-pip install numpy 
-pip install Kaggle
