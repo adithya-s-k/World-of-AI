@@ -34,11 +34,11 @@ In this project I have used machine learning model like support vector machine o
 
 ## VISUALIZATION
 
-<br>![dataset](https://github.com/Shubhamkumar-op/World-of-AI/blob/main/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211527.png)</br>
-<br>![accuracy](https://github.com/Shubhamkumar-op/World-of-AI/blob/main/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211125.png)</br>
-<br>![prediction](https://github.com/Shubhamkumar-op/World-of-AI/blob/main/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211719.png)
-<br>![multiple prediction](https://github.com/Shubhamkumar-op/World-of-AI/blob/main/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211955.png)</br>
-<br>![multiple prediction](https://github.com/Shubhamkumar-op/World-of-AI/blob/main/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20212018.png)</br>
+<br>![dataset](https://github.com/Shubhamkumar-op/World-of-AI/blob/master/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211125.png)</br>
+<br>![accuracy](https://github.com/Shubhamkumar-op/World-of-AI/blob/master/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211527.png)
+<br>![multiple prediction](https://github.com/Shubhamkumar-op/World-of-AI/blob/master/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211719.png)</br>
+<br>![multiple prediction](https://github.com/Shubhamkumar-op/World-of-AI/blob/master/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20211955.png)</br>
+<br>![hr](https://github.com/Shubhamkumar-op/World-of-AI/blob/master/machine_learning/Multiple%20disease%20prediction%20web%20app/images/Screenshot%202023-03-31%20212018.png)
 
 ## ACCURACIES
 
