@@ -13,5 +13,7 @@ The following features are used for training the machine learning model:
 ## Dataset
 https://www.kaggle.com/datasets/shantanudhakadd/email-spam-detection-dataset-classification
 
-## Output
+## Output Prediction
+![Output Image 1](email_detection_output_1.png)
+![Outpt Image 2](email_detection_output_2.png)
 
