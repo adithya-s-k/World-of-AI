@@ -10,7 +10,7 @@ The dataset used in this project is the [Flickr8k dataset](https://www.kaggle.co
 
 ## DESCRIPTION
 
-This project focuses on the task of automatically generating captions for images. The algorithm takes an image as input and produces a descriptive caption that accurately describes the content of the image. The generated captions aim to capture both the objects and the relationships between them in the image.
+This project focuses on the task of automatically generating captions for images. The algorithm takes an image as input and produces a descriptive caption that accurately describes the image's content. The generated captions aim to capture both the objects and the relationships between them in the image.
 
 ## WHAT I HAD DONE
 
@@ -21,7 +21,7 @@ The project follows the following steps:
    - Split the dataset into training and testing sets.
 
 2. Feature extraction:
-   - Use a pre-trained convolutional neural network (CNN) -- Xception to extract image features.
+   - Extract image features using a pre-trained convolutional neural network (CNN) -- Xception.
    - Preprocess the images and pass them through the CNN to obtain feature vectors.
 
 3. Caption generation:
@@ -50,11 +50,12 @@ The following libraries are required to run this project:
 
 The accuracy results for the models used in this project are as follows:
 - LOSS - 2.0033
-- predicted results are here:
-- {}
+- <br>
+![](https://tinyurl.com/54sar2v5)
+![](https://tinyurl.com/e5fj3vhf)
 
 ## CONCLUSION
 
-In conclusion, this project successfully implemented an image captioning system using the Flickr8k dataset. The combination of the ResNet-50 CNN for image feature extraction and the LSTM-based RNN for caption generation resulted in reasonable caption accuracy. The generated captions captured the content of the images with an average accuracy of 70%. Further improvements could be made by exploring more advanced models or incorporating additional data sources.
+In conclusion, this project successfully implemented an image captioning system using the Flickr8k dataset. Further improvements could be made by exploring more advanced models or incorporating additional data sources.
 
 AMAN KUMAR
