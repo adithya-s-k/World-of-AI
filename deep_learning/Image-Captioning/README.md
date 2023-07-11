@@ -58,4 +58,4 @@ The accuracy results for the models used in this project are as follows:
 
 In conclusion, this project successfully implemented an image captioning system using the Flickr8k dataset. Further improvements could be made by exploring more advanced models or incorporating additional data sources.
 
-AMAN KUMAR
+AMAN KUMAR ( https://github.com/aman-kumar29)
