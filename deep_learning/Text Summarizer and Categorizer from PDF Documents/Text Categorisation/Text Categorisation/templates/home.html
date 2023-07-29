@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cluster Text</title>
+    </head>
+    <body>
+        <h1>Cluster Text</h1>
+        <form method="POST" action="/clusters" enctype="multipart/form-data">
+            <label for="text">Enter abstract:</label><br>
+            <textarea id="text" name="abstract" rows="10" cols="50"></textarea><br>
+            <label for="csv">Or upload a CSV file:</label><br>
+            <input type="file" id="csv" name="csv"><br>
+            <input type="submit" value="Cluster">
+        </form>
+    </body>
+</html>

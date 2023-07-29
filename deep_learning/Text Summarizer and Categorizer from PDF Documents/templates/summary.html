@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Summary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+        }
+        .summary-text {
+        max-height: 400px;
+        overflow-y: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">PDF Summary</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body summary-text">
+                        <h5 class="card-title">Summary</h5>
+                        <p class="card-text">{{ summary }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

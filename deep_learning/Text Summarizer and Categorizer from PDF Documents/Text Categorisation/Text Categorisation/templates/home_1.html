@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abstract Clustering</title>
+	<style>
+		body {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-color: #f2f2f2; /* add background color */
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #333;
+			margin: 0;
+		}
+		h1, h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="file"], textarea {
+			display: block;
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			box-sizing: border-box;
+			background-color: #fff; /* add background color */
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Abstract Clustering</h1>
+	<h2>Upload CSV file:</h2>
+	<form method="post" enctype="multipart/form-data" action="{{ url_for('upload') }}">
+		<input type="file" name="file">
+		<input type="submit" value="Upload">
+	</form>
+	<br>
+	<h2>Enter abstract text:</h2>
+	<form method="post" action="{{ url_for('cluster') }}">
+		<textarea name="text" rows="5" cols="80"></textarea><br>
+		<input type="submit" value="Cluster">
+	</form>
+    <h1>{{ heading_1 }}</h1>
+	    {{ data|safe }}
+</body>
+</html>
