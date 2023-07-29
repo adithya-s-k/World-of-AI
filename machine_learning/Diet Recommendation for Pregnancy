@@ -1,0 +1,243 @@
+import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import MinMaxScaler
+
+# Read the data into the DataFrame 'df'
+df = pd.read_excel('/content/pregnant women diet.xlsx')
+
+# Define columns to one-hot encode
+columns_to_encode = ['Pregnancy State', 'Allergies', 'Dietary Restrictions', 'Nutritional Needs']
+
+# Create an instance of the OneHotEncoder
+encoder = OneHotEncoder(handle_unknown='ignore')
+
+# Fit and transform the selected columns
+encoded_columns = encoder.fit_transform(df[columns_to_encode])
+
+# Create a DataFrame from the encoded columns
+encoded_df = pd.DataFrame(encoded_columns.toarray(), columns=encoder.get_feature_names_out(columns_to_encode))
+
+# Concatenate the encoded DataFrame with the original DataFrame after dropping the original columns
+df_encoded = pd.concat([df.drop(columns=columns_to_encode), encoded_df], axis=1)
+
+# Define columns to scale using MinMaxScaler
+columns_to_scale = ['Age', 'Calories (kcal)', 'Protein (g)', 'Carbohydrates (g)', 'Fat (g)', 'Fiber (g)', 'Folate (mcg)', 'Iron (mg)', 'Calcium (mg)', 'Vitamin D (IU)']
+
+# Create an instance of the MinMaxScaler
+scaler = MinMaxScaler()
+
+# Fit the scaler to columns_to_scale
+scaler.fit(df_encoded[columns_to_scale])
+
+# Transform the train and test sets
+df_encoded[columns_to_scale] = scaler.transform(df_encoded[columns_to_scale])
+
+# Create one-hot encoded version for target variable 'Food Item'
+food_item_dummies = pd.get_dummies(df_encoded['Food Item'])
+
+# Data Preparation
+X = df_encoded.drop('Food Item', axis=1)
+y = food_item_dummies
+
+from sklearn.model_selection import train_test_split
+
+# Split the data into training and testing sets only once
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+#predicting the food item based on nutritional needs, allergies, dietary restrictions, pregnancy state using random forest classifier
+#hyperparameter tuning
+
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
+
+# Create a dictionary of hyperparameters to search
+hyperparameters = {'criterion': ['entropy', 'gini'],
+                    'max_depth': [2, 3, 4, 5],
+                    'max_features': ['auto', 'sqrt', 'log2'],
+                    'min_samples_leaf': [1, 2, 3, 4, 5],
+                    'min_samples_split': [2, 3, 4, 5],
+                    'n_estimators': [100, 200, 300, 400, 500]}
+
+# Create a grid search object with the random forest classifier and hyperparameters
+gridsearch = GridSearchCV(RandomForestClassifier(), hyperparameters, cv=5, verbose=1)
+
+# Fit the grid search
+best_model = gridsearch.fit(X_train, y_train)
+
+# Get the best hyperparameters from the grid search
+best_hyperparameters = best_model.best_params_
+
+# Create a random forest classifier with the best hyperparameters
+rfc = RandomForestClassifier(criterion=best_hyperparameters['criterion'],
+                                max_depth=best_hyperparameters['max_depth'],
+                                max_features=best_hyperparameters['max_features'],
+                                min_samples_leaf=best_hyperparameters['min_samples_leaf'],
+                                min_samples_split=best_hyperparameters['min_samples_split'],
+                                n_estimators=best_hyperparameters['n_estimators'])
+
+# Fit the model to the training set
+rfc.fit(X_train, y_train)
+
+# Evaluate the model on the test set
+score = rfc.score(X_test, y_test)
+
+# Print the accuracy
+print(score)
+
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.wrappers.scikit_learn import KerasClassifier
+from sklearn.model_selection import cross_val_score, KFold
+
+def create_model():
+  model = Sequential()
+  model.add(Dense(32, input_dim=X_train.shape[1], activation='relu'))
+  model.add(Dense(16, activation='relu'))
+  model.add(Dense(y_train.shape[1], activation='softmax'))  # output layer
+  model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+  return model
+
+estimator = KerasClassifier(build_fn=create_model, epochs=20, batch_size=5, verbose=0)
+
+kfold = KFold(n_splits=10, shuffle=True)
+results = cross_val_score(estimator, X_train, y_train, cv=kfold)
+print("Baseline: %.2f%% (%.2f%%)" % (results.mean()*100, results.std()*100))
+
+model = create_model()
+model.fit(X_train, y_train, epochs=20, batch_size=5, verbose=1)
+predictions = model.predict(X_test)
+
+
+#predicting the food item based on nutritional needs, allergies, dietary restrictions, pregnancy state
+#asking user for the input
+
+print('Enter your age:')
+age = float(input())
+
+print('Enter your pregnancy state:')
+pregnancy_state = input()
+
+print('Enter your allergies:')
+allergies = input()
+
+print('Enter your dietary restrictions:')
+dietary_restrictions = input()
+
+print('Enter your nutritional needs:')
+nutritional_needs = input()
+
+print('Enter the calories you want to consume:')
+calories = float(input())
+
+print('Enter the protein you want to consume:')
+protein = float(input())
+
+print('Enter the carbohydrates you want to consume:')
+carbohydrates = float(input())
+
+print('Enter the fat you want to consume:')
+fat = float(input())
+
+print('Enter the fiber you want to consume:')
+fiber = float(input())
+
+print('Enter the folate you want to consume:')
+folate = float(input())
+
+print('Enter the iron you want to consume:')
+iron = float(input())
+
+print('Enter the calcium you want to consume:')
+calcium = float(input())
+
+print('Enter the vitamin D you want to consume:')
+vitamin_d = float(input())
+
+# Create a DataFrame for the user input
+user_input = pd.DataFrame({'Age': [age],
+                            'Calories (kcal)': [calories],
+                            'Protein (g)': [protein],
+                            'Carbohydrates (g)': [carbohydrates],
+                            'Fat (g)': [fat],
+                            'Fiber (g)': [fiber],
+                            'Folate (mcg)': [folate],
+                            'Iron (mg)': [iron],
+                            'Calcium (mg)': [calcium],
+                            'Vitamin D (IU)': [vitamin_d],
+                            'Pregnancy State': [pregnancy_state],
+                            'Allergies': [allergies],
+                            'Dietary Restrictions': [dietary_restrictions],
+                            'Nutritional Needs': [nutritional_needs]})
+
+
+# Transform the user input
+user_input[columns_to_scale] = scaler.transform(user_input[columns_to_scale])
+
+# Create one-hot encoded version of the user input
+user_input_encoded = pd.get_dummies(user_input)
+
+# Get missing columns in the user input
+missing_cols = set(X_train.columns) - set(user_input_encoded.columns)
+
+# Add a missing column in user_input_encoded with default value equal to 0
+for col in missing_cols:
+    user_input_encoded[col] = 0
+
+# Ensure the order of column in the user input is in the same order than in X_train
+user_input_encoded = user_input_encoded[X_train.columns]
+
+# Generate prediction for the user input using the random forest classifier
+prediction = model.predict(user_input_encoded)
+
+# Get the food item corresponding to the predicted food item
+food_item = food_item_dummies.columns[prediction.argmax(axis=1)[0]]
+
+# Generate prediction probabilities for the user input using the trained model
+prediction_probs = model.predict(user_input_encoded)
+
+# Get the top 5 predicted food items along with their probabilities
+top_7_indices = prediction_probs.argsort(axis=1)[0][-7:][::-1]
+top_7_food_items = food_item_dummies.columns[top_7_indices]
+top_7_probabilities = prediction_probs[0][top_7_indices]
+
+# Print the top 5 recommended food items along with their probabilities
+print('Top 7 recommended food items:')
+for item, prob in zip(top_7_food_items, top_7_probabilities):
+    print(f'{item}')
+
+# List of top 5 recommended food items
+top_7_food_items = list(top_7_food_items)
+
+# Number of food items to select per week (e.g., 3 for 3 food items per week)
+items_per_week = 3
+
+# Number of food items to select per week (e.g., 3 for 3 food items per week)
+items_per_week = 3
+
+def generate_weekly_diet_chart():
+    # Shuffle the list of top 7 food items to introduce variation
+    random.shuffle(top_7_food_items)
+
+    # Initialize an empty diet chart list
+    diet_chart = []
+
+    # Randomly select 3 food items for each week
+    weekly_food_items = top_7_food_items[:items_per_week]
+    diet_chart.append(weekly_food_items)
+
+    # Print the diet chart for 1 week
+    print('Diet Chart for this Week:')
+    print(f'Include these in your diet this week! : {weekly_food_items}')
+
+# Generate the diet chart for the first week
+generate_weekly_diet_chart()
+
+# Prompt the user for continuation
+while True:
+    user_input = input('Do you want the diet chart for the next week? (yes/no): ')
+    if user_input.lower() == 'yes':
+        generate_weekly_diet_chart()
+    else:
+        print('Take care! We will see you again')
+        break
+
