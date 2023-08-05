@@ -50,6 +50,6 @@ Libraries required:
 ## CONCLUSION
 The model can predict the fruit, with input as an image. 
 
-The loss and accuracy - Loss: ,  Accuracy: 
+The loss and accuracy - loss: 1.0388 - accuracy: 0.5625
 
 
