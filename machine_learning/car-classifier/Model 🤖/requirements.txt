@@ -1,0 +1,2 @@
+fastai
+torch==1.12.1
